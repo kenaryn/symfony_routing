@@ -21,15 +21,19 @@ class HistoireController extends AbstractController
     {
         $histoireJson = file_get_contents('histoire.json');
         $histoire = json_decode($histoireJson);
-        if ($id > 13) {
-            return $this->redirect('/histoire/fin');
-        } else if ($id == 13) {
-            $this->addFlash('notice', 'This history is now ending.');
-        } else if ($id < 2 || $id > 14 || is_nan($id)) {
+
+        if ($id < 1 || $id > 14 || !is_numeric($id)) {
             throw $this->createNotFoundException('This page exists not!');
+        }
+
+        if ($id == 13) {
+            $this->addFlash('notice', 'This history is now ending.');
+        } else if ($id > 13) {
+            return $this->redirect('/histoire/fin');
         }
         return $this->render('pages/page-base.html.twig', ['page' => $histoire->pages[$id - 2]]);
     }
+
     #[Route('/histoire/fin', name: 'app_histoire_fin')]
     public function showEndingPage(): Response
     {
