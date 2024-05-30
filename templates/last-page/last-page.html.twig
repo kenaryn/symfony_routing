@@ -1,0 +1,16 @@
+
+{% extends 'base.html.twig' %}
+
+{% block title %}Etape index{% endblock %}
+
+{% block body %}<h1>Droits d'auteurs sur les textes et images</h1>
+<h2>Droits sur l'Histoire</h2>
+{{ histoire.droitsHistoire }}
+
+<h2>Droits sur les images</h2>
+{{ histoire.droitsImages }}
+
+
+
+</p><a href="{{ path('app_histoire_p1') }}">Retour à la première page</a></p>
+{% endblock %}

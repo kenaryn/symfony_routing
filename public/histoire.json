@@ -1,0 +1,26 @@
+{
+
+        "titre":"Une feuille part en voyage",
+        "editeur":"Pratham",
+        "auteur":"Anagha",
+        "illustrateur":"Anagha",
+        "traducteur":"Cyrille Largillie",
+        "illustation":"1.png",
+        "droitsHistoire":"This story: Une feuille part en voyage is translated by Cyrille Largillier. Derived from: 'A Leaf Goes on a Trip', by Shilpa Bhide.© Pratham Books , 2022 ",
+        "droitsImages":"A leaf carried away by wind from tree, by Anagha Kusum.  © Pratham Books, 2021. Some rights reserved. Released under CC BY 4.0 license. Page 2: Car going down a road surrounded by elds, by Anagha Kusum © Pratham Books, 2021.",
+        "pages":
+        [
+            {"id":2,"img":"2.png","texte":"Un arbre"},
+            {"id":3,"img":"3.png","texte":"Du vent"},
+            {"id":4,"img":"4.png","texte":"Karim"},
+            {"id":5,"img":"5.png","texte":"Un oiseau"},
+            {"id":6,"img":"6.png","texte":"Une voiture"},
+            {"id":7,"img":"7.png","texte":"Kabir"},
+            {"id":8,"img":"8.png","texte":"Kabir joue"},
+            {"id":9,"img":"9.png","texte":"Kabir et sa couronne"},
+            {"id":10,"img":"10.png","texte":"Kabir éternue"},
+            {"id":11,"img":"11.png","texte":"Kabir garde la feuille"},
+            {"id":12,"img":"12.png","texte":"340 jours plus tard..."},
+            {"id":13,"img":"13.png","texte":"Mot de la fin"}
+        ]
+}

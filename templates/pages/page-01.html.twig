@@ -1,0 +1,24 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Etape index{% endblock %}
+
+{% block body %}
+    <h1>{{ histoire.titre }}</h1>
+<img src="{{ asset('images/'~histoire.illustation) }}"/>
+
+<h2>Informations sur le livre gratuit</h2>
+<ul>
+    <li>Edition: {{ histoire.editeur }}</li>
+    <li> Ecriture: {{ histoire.auteur }} </li>
+    <li>Illustration: {{ histoire.illustrateur }}</li>
+    <li>Traduction: {{ histoire.traducteur }}</li>
+</ul>
+    
+<ol>
+    {% for page in histoire.pages %}
+        <li><a href="{{ path('app_histoire_page', {'id': page.id}) }}">{{ page.texte }}</a></li>
+    {% endfor %}
+</ol>
+
+<a href="{{ path('app_histoire_page',{'id':2}) }}">Lire la suite</a>
+{% endblock %}
